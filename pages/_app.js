@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/globals.css";
 import { StateProvider } from "../config/StateProvider";
 import reducer, { initialState } from "../config/reducer";
-import VikiApp from "./__app";
+import VikiApp from "../containers/_viki";
 
 function MyApp({ Component, pageProps }) {
   return (

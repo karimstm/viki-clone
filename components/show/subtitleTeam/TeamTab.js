@@ -56,9 +56,9 @@ function TeamTab() {
                   [styles.uncollapse__body]: collapse == false,
                 })}`}
               >
-                {concatTeam()?.map((member) => (
+                {concatTeam()?.map((member, index) => (
                   <TeamCard
-                    key={member?.id}
+                    key={member?.id || index}
                     role={member?.role}
                     img={member?.user.images.avatar?.url}
                     name={member?.user.username}
@@ -98,9 +98,9 @@ function TeamTab() {
                   [styles.uncollapse__body]: collapse == false,
                 })}`}
               >
-                {contributors["managers"]?.map((member) => (
+                {contributors["managers"]?.map((member, index) => (
                   <TeamCard
-                    key={member?.id}
+                    key={member?.id || index}
                     role={member?.role}
                     img={member?.user.images.avatar?.url}
                     name={member?.user.username}
