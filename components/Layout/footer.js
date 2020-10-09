@@ -8,7 +8,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import styles from "./Footer.module.scss";
+import styles from "./footer.module.scss";
 import { Form, Nav } from "react-bootstrap";
 
 library.add(fab);
