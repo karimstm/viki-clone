@@ -1,0 +1,86 @@
+@import "../../../styles/variable.scss";
+
+.team__tab {
+  max-width: 900px;
+  .team__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .team__tabs__list {
+    border: none;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+
+    :global(.nav-link) {
+      line-height: 1;
+      padding: 0.5rem 1rem;
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    .activet {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0) !important;
+      border-radius: 1em;
+      color: #222222;
+
+      &:hover {
+        color: #222222;
+      }
+    }
+
+    .single__tab {
+      &:hover,
+      &:focus {
+        border: 1px solid rgba(0, 0, 0, 0);
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.team__list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+.collapse__body {
+  overflow: hidden;
+  width: 100%;
+  max-height: 55.5em;
+}
+
+.uncollapse__body {
+  overflow: hidden;
+  width: 100%;
+}
+
+.vi__collapse__shadow {
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    top: -2em;
+    left: 0;
+    height: 2em;
+    background: linear-gradient(
+      to top,
+      rgb(26, 26, 26) 0%,
+      rgba(26, 26, 26, 0) 100%
+    );
+  }
+}
+.vi__collapse {
+  position: relative;
+  font-size: 1.2rem;
+  color: $primary_color;
+  cursor: pointer;
+}

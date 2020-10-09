@@ -1,0 +1,65 @@
+@import "../../styles/variable.scss";
+
+.about__container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  .about__right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: 0.7;
+    margin-right: 3.5em;
+    padding-right: 2em;
+    line-height: 2;
+
+    .about_synopsis {
+      p {
+        font-size: 1.3rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0;
+      }
+
+      .sysnopsis__content {
+        .collapse__body {
+          overflow: hidden;
+          width: 100%;
+          max-height: 16.5em;
+        }
+
+        .uncollapse__body {
+          overflow: hidden;
+          width: 100%;
+        }
+
+        .vi__collapse__shadow {
+          &::before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            top: -2em;
+            left: 0;
+            height: 2em;
+            background: linear-gradient(
+              to top,
+              rgb(26, 26, 26) 0%,
+              rgba(26, 26, 26, 0) 100%
+            );
+          }
+        }
+        .vi__collapse {
+          position: relative;
+          font-size: 1.2rem;
+          color: $primary_color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .about__left {
+    flex: 0.3;
+  }
+}

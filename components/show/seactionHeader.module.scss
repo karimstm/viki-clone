@@ -1,0 +1,18 @@
+@import "../../styles/variable.scss";
+
+.section__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+
+  .section__header__icon {
+    color: $primary_color;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    margin-left: 0.5em;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}

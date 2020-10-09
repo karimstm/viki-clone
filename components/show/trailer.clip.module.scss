@@ -1,0 +1,34 @@
+.show__trailer__clip {
+  .show__tabs__list {
+    border: none;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+
+    :global(.nav-link) {
+      line-height: 1;
+      padding: 0.5rem 1rem;
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+    .activet {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0) !important;
+      border-radius: 1em;
+      color: #222222;
+
+      &:hover {
+        color: #222222;
+      }
+    }
+
+    .single__tab {
+      &:hover,
+      &:focus {
+        border: 1px solid rgba(0, 0, 0, 0);
+        outline: none !important;
+      }
+    }
+  }
+}

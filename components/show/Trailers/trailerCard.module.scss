@@ -1,0 +1,79 @@
+@import "../../../styles/variable.scss";
+
+.play__list {
+  overflow: hidden;
+
+  .play__video__card {
+    margin-bottom: 2rem;
+    .play__video__image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+
+      &:hover {
+        .play__icon__hover {
+          opacity: 1;
+        }
+      }
+      .play__icon__hover {
+        display: flex;
+        position: absolute;
+        font-size: 3rem;
+        opacity: 0;
+        color: #3a7ed8c9;
+        transition: opacity 0.2s ease;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .play__video__details {
+    display: flex;
+    flex-direction: column;
+
+    .play__video__sub {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .play__video__title {
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .play__video__image {
+    width: 100%;
+    background-color: #222222;
+    position: relative;
+
+    .ep__number {
+      position: absolute;
+      bottom: 10%;
+      left: 0.8rem;
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+}
+
+.show__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: $primary_color;
+}

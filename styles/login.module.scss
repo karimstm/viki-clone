@@ -1,0 +1,123 @@
+.login__container {
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  color: rgb(240, 240, 240);
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+
+  .action__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    button {
+      width: 100%;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .or__ {
+    text-align: center;
+    p {
+      font-size: 0.8rem;
+      text-align: left;
+    }
+    .or__or {
+      width: 100%;
+      position: relative;
+      margin-bottom: 1rem;
+      span {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 3;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        border-bottom: 1px solid rgb(160, 160, 160);
+        width: 45%;
+        height: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: 1px solid rgb(160, 160, 160);
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+    }
+  }
+
+  .login__form {
+    span {
+      &:first-child {
+        font-size: 0.9rem;
+      }
+    }
+
+    .input__form {
+      margin-top: 2rem;
+    }
+  }
+
+  :global {
+    input[type="text"],
+    input[type="email"],
+    input[type="textarea"],
+    input[type="password"],
+    input[type="date"] {
+      color: #ffffff;
+      border: none;
+      border-bottom: 1px solid rgb(160, 160, 160);
+      background: transparent;
+    }
+
+    .form-check-label {
+      font-size: 0.9rem;
+    }
+
+    input[type="date"] {
+      width: 100%;
+    }
+  }
+
+  input {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-bottom-color: #0c9bff;
+    }
+  }
+
+  .login__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    p {
+      font-size: 0.9em;
+    }
+  }
+
+  .viki__btn {
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+}

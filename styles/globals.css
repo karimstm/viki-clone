@@ -1,9 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:700,400,300|Raleway:900,900i);
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Noto Sans", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 a {
@@ -11,6 +15,57 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #0c9bff;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.container-fluid {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.dropdown-menu {
+  background-color: #000 !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #292929;
+}
+
+/* .slick-slide {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.slick-prev {
+  left: 50px;
+  z-index: 5;
+}
+
+.slick-next {
+  right: 50px;
+  z-index: 5;
+} */
+
+/* .slick-prev:before,
+.slick-next::before {
+  font-family: "slick";
+  font-size: 40px;
+  line-height: 1;
+
+  opacity: 0.75;
+  color: #222222;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+main .main__container {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
