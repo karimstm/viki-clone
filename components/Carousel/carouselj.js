@@ -29,7 +29,7 @@ const breakpoints = {
 
 function Carouselj({ url, title, list, people }) {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchDAta = async () => {
